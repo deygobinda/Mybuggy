@@ -25,7 +25,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='h-fit'>
-                        <img src={img1} alt="" className="w-52 lg:w-7/12" />
+                        <img src={img1} alt="" className=" w-fit lg:w-10/12" />
                     </div>
                 </div>
             </div>
