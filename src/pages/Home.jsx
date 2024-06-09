@@ -8,7 +8,7 @@ const Home = () => {
         <div id="home">
             <div
                 id="hero"
-                className="bg-gradient-to-br from-purple-50 via-orange-50 to-transparent  flex items-center justify-center py-10" 
+                className=" flex items-center justify-center py-10" 
             >
                 <div className='flex flex-col-reverse h-fit items-center px-14 lg:flex-row lg:justify-around'>
                     <div className='flex flex-col items-center lg:items-start gap-5 lg:w-1/2'>
