@@ -18,7 +18,7 @@ function ContactUsCard({ image, title, text }) {
 
 export default function ContactUs() {
     return (
-        <div className="contact-us-container p-6">
+        <div className="contact-us-container p-6 ">
             <div className="contact-us-heading-container text-center mb-8">
                 <h2 className="contact-us-heading text-3xl font-bold">Contact Us</h2>
             </div>
