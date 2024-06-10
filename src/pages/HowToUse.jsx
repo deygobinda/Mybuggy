@@ -27,7 +27,7 @@ export default function HowToUse() {
       </div>
 
       <div className="md:flex lg:ml-96 items-center justify-around gap-5 mt-12 m-16">
-        <div className="text-2xl md:text-4xl font-extrabold text-blue-800 lg:text-3xl">
+        <div className="text-2xl md:text-4xl font-extrabold text-blue-800 lg:text-3xl lg:w-1/2">
           A company called MYBUGGY <br /> operating out of <br /> Allentown
           <div className="text-2xl md:text-3xl font-light text-gray-600">
             MyBuggy is a leading ride-hailing platform that connects passengers

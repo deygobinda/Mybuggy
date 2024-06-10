@@ -38,7 +38,7 @@ function Oldblog() {
 
 export default function Blog() {
     return (
-        <div id="blog" className="container-blog-main min-h-screen bg-white text-gray-900 flex flex-col items-center py-10">
+        <div id="blog" className="container-blog-main min-h-screen  text-gray-900 flex flex-col items-center py-10">
             <div className="heading flex items-start justify-center">
                 <h1 className="blog-title text-4xl md:text-6xl font-bold">THE BLOG</h1>
             </div>
