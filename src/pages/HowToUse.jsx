@@ -1,24 +1,23 @@
-import sideimg from "../assets/asset16.png";
+import sideimg from "../assets/asset17.png";
 import sidevideo from "../assets/UseVideo.mp4";
 import { Link } from "react-router-dom";
 
 export default function HowToUse() {
   return (
-    <div className="HowToUse-container py-10">
-      <div className="HowToUse-heading-container text-center mb-8">
-        <h2 className="HowToUse-heading text-2xl md:text-3xl font-bold">How To Use</h2>
-      </div>
-
-      <div className="backgroundcolor min-w-sm m-auto bg-gradient-to-r from-indigo-500 via-violet-500 to-red-200 py-12">
-        <div className="flex flex-col-reverse h-fit items-center px-14 lg:flex-row lg:justify-around">
-          <div className="flex flex-col items-center lg:items-start gap-5 lg:w-1/2">
-            <div className="text-2xl md:text-3xl font-bold text-white lg:text-4xl">
+    
+    
+    <div className="HowToUse-container py-5">
+        
+     <div className="backgroundcolor min-w-sm m-auto bg-white  py-10">
+        <div className="flex flex-col-reverse h-fit items-center px-14  lg:justify-around">
+          <div className="flex flex-col items-start lg:items-start gap-5 lg:w-1/2">
+            <div className="text-2xl md:text-3xl font-bold text-black lg:text-4xl">
               <span>INSTRUCTIONS FOR USING THE MYBUGGY APP</span>
             </div>
-            <div className="text-2xl md:text-3xl font-light text-white lg:text-2xl">
+            <div className="text-xl md:text-xl font-normal text-gray-600 mt-5">
               <span>
-                Our main offering is the creation of software that <br />{" "}
-                facilitates on-demand communication between <br /> drivers and
+                Our main offering is the creation of software that 
+                facilitates on-demand communication between drivers and
                 passengers.
               </span>
             </div>
@@ -26,10 +25,10 @@ export default function HowToUse() {
         </div>
       </div>
 
-      <div className="md:flex lg:ml-96 items-center justify-around gap-5 mt-12 m-16">
-        <div className="text-2xl md:text-4xl font-extrabold text-blue-800 lg:text-3xl lg:w-1/2">
-          A company called MYBUGGY <br /> operating out of <br /> Allentown
-          <div className="text-2xl md:text-3xl font-light text-gray-600">
+      <div className="md:flex lg:ml-96 items-center justify-around gap-5 mt-5 m-16">
+        <div className="text-2xl md:text-4xl font-bold text-black lg:text-4xl lg:w-1/2">
+          A company called MyBuggy operating out of Allentown
+          <div className="text-xl md:text-xl font-normal text-gray-600 mt-5 ">
             MyBuggy is a leading ride-hailing platform that connects passengers
             with safe and reliable transportation services, making commuting a
             hassle-free experience. With its user-friendly mobile application
@@ -45,7 +44,8 @@ export default function HowToUse() {
 
         <div className="flex justify-center items-center lg:mr-28 py-10">
           <Link to="/">
-            <img src={sideimg} alt="side image" />
+            <img src={sideimg}  height="400"
+                width="300" alt="side image" />
           </Link>
         </div>
       </div>
@@ -73,8 +73,8 @@ export default function HowToUse() {
           <div className="Total-steps ml-16 mt-12 mr-8">
             <div className="font-extrabold text-2xl md:text-3xl text-blue-800">
               Step 1
-              <div className="font-bold text-gray-700">Create an account</div>
-              <div className="text-2xl md:text-3xl font-light text-gray-600 lg:text-2xl pt-1 lg:w-1/2">
+              <div className="font-bold text-gray-500">Create an account</div>
+              <div className="text-xl md:text-xl font-normal text-gray-600  pt-1 lg:w-1/2">
                 To get started with MyBuggy, you can create an account using
                 your email address and phone number. This simple and
                 straightforward registration process allows you to request a
@@ -85,10 +85,10 @@ export default function HowToUse() {
 
             <div className="font-extrabold text-2xl md:text-3xl text-blue-800 mt-10">
               Step 2
-              <div className="font-bold text-gray-700">Put where to go</div>
-              <div className="text-2xl md:text-3xl font-light text-gray-600 lg:text-2xl pt-1 lg:w-1/2">
+              <div className="font-bold text-gray-500">Put where to go</div>
+              <div className="text-xl  font-normal text-gray-600  pt-1 lg:w-1/2">
                 The first step in using MyBuggy is for the passenger to open the
-                app and type their destination into the "Where to?" field. The
+                app and type their destination into the "Where to ? " field. The
                 app will then present the rider with a list of available rides,
                 each of which will include details such as the type of vehicle,
                 the cost, and the expected arrival time. The rider can quickly
@@ -99,10 +99,10 @@ export default function HowToUse() {
 
             <div className="font-extrabold text-2xl md:text-3xl text-blue-800 mt-10">
               Step 3
-              <div className="font-bold text-gray-700">
+              <div className="font-bold text-gray-500">
                 Check your driver details
               </div>
-              <div className="text-2xl md:text-3xl font-light text-gray-600 lg:text-2xl pt-1 lg:w-1/2">
+              <div className="text-xl  font-normal text-gray-600  pt-1 lg:w-1/2">
                 Once the ride request is confirmed, MyBuggy's advanced algorithm
                 matches the rider with a nearby driver who can fulfill the ride
                 request. The driver will see the request and can choose to
@@ -115,8 +115,8 @@ export default function HowToUse() {
 
             <div className="font-extrabold text-2xl md:text-3xl text-blue-800 mt-10">
               Step 4
-              <div className="font-bold text-gray-700">Verify your ride</div>
-              <div className="text-2xl md:text-3xl font-light text-gray-600 lg:text-2xl pt-1 lg:w-1/2">
+              <div className="font-bold text-gray-500">Verify your ride</div>
+              <div className="text-xl  font-normal text-gray-600  pt-1 lg:w-1/2">
                 Once the driver arrives at the pickup location, both the driver
                 and the rider will verify each other's names and confirm the
                 destination to ensure a secure and hassle-free ride. After the
@@ -129,8 +129,8 @@ export default function HowToUse() {
 
             <div className="font-extrabold text-2xl md:text-3xl text-blue-800 mt-10">
               Step 5
-              <div className="font-bold text-gray-700">Enjoy your ride</div>
-              <div className="text-2xl md:text-3xl font-light text-gray-600 lg:text-2xl pt-1 lg:w-1/2">
+              <div className="font-bold text-gray-500">Enjoy your ride</div>
+              <div className="text-xl  font-normal text-gray-600  pt-1 lg:w-1/2">
                 Once the ride has started, the driver will take the rider to
                 their desired destination. To ensure an efficient and
                 stress-free journey, MyBuggy provides drivers with turn-by-turn
@@ -144,10 +144,10 @@ export default function HowToUse() {
 
             <div className="font-extrabold text-2xl md:text-3xl text-blue-800 mt-10">
               Step 6
-              <div className="font-bold text-gray-700">
+              <div className="font-bold text-gray-500">
                 Provide rating and review
               </div>
-              <div className="text-2xl md:text-3xl font-light text-gray-600 lg:text-2xl pt-1 lg:w-1/2">
+              <div className="text-xl  font-normal text-gray-600  pt-1 lg:w-1/2">
                 After the trip is complete, both the driver and the rider have
                 the opportunity to rate each other on a scale of 1 to 5 stars.
                 This rating system helps maintain the quality of service and
