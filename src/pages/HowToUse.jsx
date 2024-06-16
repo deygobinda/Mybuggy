@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function HowToUse() {
   return (
-    <div className="HowToUse-container py-10">
+    <div className="HowToUse-container py-10 bg-gray-100">
       <div className="HowToUse-heading-container text-center mb-8">
         <h2 className="HowToUse-heading text-2xl md:text-3xl font-bold">How To Use</h2>
       </div>

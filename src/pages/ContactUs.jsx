@@ -1,44 +1,69 @@
-import phoneImg from '../assets/phoneImg.png';
-import emailImg from '../assets/emailImg.png';
-import addressImg from '../assets/addressImg.png';
-
-function ContactUsCard({ image, title, text }) {
-    return (
-        <div className="contact_us_card_container p-4 border rounded-lg shadow-md flex flex-col items-center h-48 md:h-64 w-full sm:w-3/4 md:w-full mx-auto">
-            <div className="upper_icon mb-4">
-                <img src={image} alt={title} className="w-16 h-16" />
-            </div>
-            <div className="lower-text text-center">
-                <h3 className="font-semibold text-lg mb-2">{title}</h3>
-                <p className="text-gray-600">{text}</p>
-            </div>
-        </div>
-    );
-}
+import React from 'react';
 
 export default function ContactUs() {
-    return (
-        <div className="contact-us-container p-6 ">
-            <div className="contact-us-heading-container text-center mb-8">
-                <h2 className="contact-us-heading text-3xl font-bold">Contact Us</h2>
+  return (
+    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gray-100 p-4 md:p-8">
+      <div className="bg-white shadow-md rounded-lg overflow-hidden max-w-4xl w-full flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 p-8">
+          <h2 className="text-2xl font-bold mb-4 text-black">Get In Touch</h2>
+          <p className="mb-6 text-gray-600">Have a question? Get in touch with us.</p>
+          <div className="space-y-4">
+            <div className="flex items-center space-x-4">
+              <i className="fas fa-map-marker-alt text-blue-600 w-8 h-8"></i>
+              <div>
+                <h3 className="font-medium text-blue-600">Location</h3>
+                <p className="text-gray-600">Allentown, Pennsylvania 18102, United States</p>
+              </div>
             </div>
-            <div className="contact-us-element grid grid-cols-1 md:grid-cols-3 gap-6">
-                <ContactUsCard 
-                    image={phoneImg} 
-                    title="Phone" 
-                    text="+4847479294" 
-                />
-                <ContactUsCard 
-                    image={emailImg} 
-                    title="Email" 
-                    text="contact@example.com" 
-                />
-                <ContactUsCard 
-                    image={addressImg} 
-                    title="Address" 
-                    text="Allentown, Pennsylvania 18102, United States" 
-                />
+            <div className="flex items-center space-x-4">
+              <i className="fas fa-phone-alt text-purple-600 w-8 h-8"></i>
+              <div>
+                <h3 className="font-medium text-purple-600">Phone</h3>
+                <p className="text-gray-600">+1 (845) 610-2160</p>
+              </div>
             </div>
+            <div className="flex items-center space-x-4">
+              <i className="fas fa-envelope text-green-600 w-8 h-8"></i>
+              <div>
+                <h3 className="font-medium text-green-600">Email</h3>
+                <p className="text-gray-600">contact@easytaxiservices.com</p>
+              </div>
+            </div>
+          </div>
+          <p className="mt-6 text-gray-500 text-sm">
+            FOR ANY SUGGESTION PLEASE CONTACT US <a href="mailto:contact@easytaxiservices.com" className="text-blue-500">CONTACT@EASYTAXISERVICES.COM</a> OR CALL 484.747.9294 OR TO VISIT <a href="https://www.puc.pa.gov/" className="text-blue-500">HTTPS://WWW.PUC.PA.GOV/</a> OR CUSTOMER CARE @ CUSTOMER HOTLINE 1-800-692-7380
+          </p>
         </div>
-    );
+        <div className="w-full md:w-1/2 p-8 bg-gray-50">
+          <form>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block mb-2 text-sm font-medium text-gray-600">Your Name *</label>
+                  <input type="text" className="block w-full p-3 border rounded-lg" placeholder="First" />
+                </div>
+                <div>
+                  <label className="block mb-2 text-sm font-medium text-gray-600 invisible">Last</label>
+                  <input type="text" className="block w-full p-3 border rounded-lg" placeholder="Last" />
+                </div>
+              </div>
+              <div>
+                <label className="block mb-2 text-sm font-medium text-gray-600">Your Email *</label>
+                <input type="email" className="block w-full p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm font-medium text-gray-600">Your Mobile No *</label>
+                <input type="text" className="block w-full p-3 border rounded-lg" />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm font-medium text-gray-600">Your message</label>
+                <textarea className="block w-full p-3 border rounded-lg h-32"></textarea>
+              </div>
+              <button type="submit" className="mt-4 w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-3 rounded-lg">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }

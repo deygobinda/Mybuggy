@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import { lazy, Suspense } from 'react'
 import Home from "../pages/Home";
 import HowToUse from "../pages/HowToUse";
 import Driver from "../pages/Driver";

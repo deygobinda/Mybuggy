@@ -10,8 +10,8 @@ function Recentblog() {
             <div className="textofblog text-gray-900 mt-4">
                 <h2 className="text-3xl font-bold">This is the updated blog from us</h2>
                 <p className="text-sm mt-2">Date: 09/06/2024</p>
-                <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quidem architecto. Assumenda, velit veritatis a distinctio incidunt et dolorem ut quis voluptatum nobis odio sequi eligendi itaque recusandae illum cum!</p>
-                <button type="button" className="border-4 p-2 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-yellow-500 hover:text-white">View More</button>
+                <p className="mt-3">TBD TB updated Why do we use it? to be updated Where does it come from? to be updated</p>
+                <button type="button" className="border-4 p-2 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">View More</button>
             </div>
         </div>
     );
@@ -22,15 +22,15 @@ function Oldblog() {
         <div className="oldblogcontainer grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-1 mt-5">
             <div className="firstoldbox bg-white p-2 rounded-lg shadow-md">
                 <img src={bl2} className="w-full h-40 object-cover rounded-md" alt="Old Blog 1" />
-                <p className="text-gray-900 mt-2">This is the old blog</p>
+                <button type="button" className="border-4 py-1 px-5 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">Read</button>
             </div>
             <div className="secondoldbox bg-white p-2 rounded-lg shadow-md">
                 <img src={bl3} className="w-full h-40 object-cover rounded-md" alt="Old Blog 2" />
-                <p className="text-gray-900 mt-2">This is the old blog</p>
+                <button type="button" className="border-4 py-1 px-5 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">Read</button>
             </div>
             <div className="thirdoldbox bg-white p-2 rounded-lg shadow-md">
                 <img src={blog1img} className="w-full h-40 object-cover rounded-md" alt="Old Blog 3" />
-                <p className="text-gray-900 mt-2">This is the old blog</p>
+                <button type="button" className="border-4 py-1 px-5 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">Read</button>
             </div>
         </div>
     );
