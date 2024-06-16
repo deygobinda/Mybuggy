@@ -33,7 +33,7 @@ export default function ContactUs() {
                         </div>
                     </div>
                     <p className="mt-6 text-gray-500 text-sm">
-                        FOR ANY SUGGESTION PLEASE CONTACT US <a href="mailto:contact@easytaxiservices.com" className="text-blue-500">mybuggyusa@gmail.com</a> OR CALL 484.747.9294
+                        FOR ANY SUGGESTION PLEASE CONTACT US <a href="mailto:contact@easytaxiservices.com" className="text-blue-500">mybuggyusa@gmail.com</a> OR CALL 484.747.9294 
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 p-8 bg-gray-50">
