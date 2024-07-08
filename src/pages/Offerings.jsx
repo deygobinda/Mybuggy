@@ -19,7 +19,7 @@ const offers = [
     },
     {
       title: "Availability",
-      description: "Over a fifty-mile radius of Allentown, Pennsylvania, Easy Taxi is a highly-utilized service. As a result, you can probably guess that we're open to the idea of meeting up.",
+      description: "Over a fifty-mile radius of Allentown, Pennsylvania, Mybuggy is a highly-utilized service. As a result, you can probably guess that we're open to the idea of meeting up.",
       icon: "fas fa-map-pin",
       bgColor: "bg-indigo-500"
     },
@@ -38,7 +38,7 @@ const offers = [
   ];
   
   const OfferCard = ({ title, description, icon, bgColor }) => (
-    <div className="offer bg-white rounded-lg shadow-lg p-6 text-left">
+    <div className="offer bg-white rounded-lg  hover:shadow-lg p-6 text-left hover:scale-105 transition-all">
       <div className={`icon ${bgColor} w-12 h-12 rounded-full mb-4 flex items-center justify-center text-white`}>
         <i className={icon}></i>
       </div>
@@ -48,7 +48,7 @@ const offers = [
   );
   
   const Offerings = () => (
-    <div className="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div className="bg-gray-100 flex items-center justify-center min-h-screen px-14">
       <div className="text-center p-8">
         <h2 className="text-3xl font-bold text-black mb-8">What We Offer</h2>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

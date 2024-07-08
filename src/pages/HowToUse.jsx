@@ -1,63 +1,5 @@
 import sideimg from "../assets/asset 20.png";
-import { Link } from "react-router-dom";
 
-export default function HowToUse() {
-  return (
-    <div className="py-10 bg-gray-100">
-      <div className="max-w-6xl mx-auto py-12">
-        <div className="flex flex-col-reverse lg:flex-row lg:justify-around items-center px-4 lg:px-14">
-          <div className="flex flex-col items-center lg:items-start gap-5 lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
-              INSTRUCTIONS FOR USING THE MYBUGGY APP
-            </h1>
-            <p className="text-xl text-gray-600 mt-5">
-              Our main offering is the creation of software that facilitates on-demand communication between drivers and passengers.
-            </p>
-          </div>
-          <div className="flex justify-center items-center lg:mr-28 py-10">
-            <Link to="/">
-              <img src={sideimg} height="400" width="300" alt="side image" />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 mt-5 mx-4 lg:mx-16 text-center">
-        <div className="text-2xl md:text-4xl font-bold text-black lg:w-1/2">
-          <h2 className="lg:text-4xl">A company called MyBuggy operating out of Allentown</h2>
-          <p className="text-xl text-gray-600 mt-5">
-            MyBuggy is a leading ride-hailing platform that connects passengers with safe and reliable transportation services, making commuting a hassle-free experience. With its user-friendly mobile application and extensive network of trained drivers, MyBuggy provides seamless and affordable transportation solutions for customers in Allentown.
-          </p>
-          <div className="pt-10">
-            <button className="relative border-2 overflow-hidden rounded-lg border-pink-500 bg-transparent py-2.5 px-5 text-xl uppercase text-red-900 transition-colors hover:text-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-red-500 before:transition-transform before:duration-300 before:content-[''] hover:before:scale-x-100">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center mb-8 px-4">
-        <h2 className="text-2xl md:text-3xl font-extrabold pt-10">
-          Here's A Summary (In Steps) Of How The App Operates
-        </h2>
-      </div>
-
-      <div className="flex flex-col items-center gap-10 mt-12 px-4">
-        {steps.map((step, index) => (
-          <div key={index} className="text-center lg:text-left max-w-3xl">
-            <h3 className="font-extrabold text-2xl md:text-3xl text-blue-800">
-              Step {index + 1}
-            </h3>
-            <h4 className="font-bold text-gray-500">{step.title}</h4>
-            <p className="text-xl text-gray-600 pt-1">
-              {step.description}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 const steps = [
   {
@@ -85,3 +27,35 @@ const steps = [
     description: "After the trip is complete, both the driver and the rider have the opportunity to rate each other on a scale of 1 to 5 stars. This rating system helps maintain the quality of service and provides valuable feedback for both parties. In addition to the rating, riders also have the option to give compliments and a tip directly through the app, making the entire experience even more convenient and user-friendly. With MyBuggy, riders can rest assured that their feedback will be taken into consideration, and they can enjoy a seamless and enjoyable transportation experience every time."
   }
 ];
+
+export default function HowToUse() {
+  return (
+    <div className="py-16 bg-gray-50 px-7">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mt-5">
+        <div className="md:w-1/5 ">
+          <img src={sideimg} alt="MyBuggy" className="w-full rounded-lg shadow-md" />
+        </div>
+        <div className="text-black lg:w-1/2   md:text-center">
+          <h2 className="md:text-3xl text-lg font-bold mb-5">A company called MyBuggy operating out of Allentown</h2>
+          <p className="md:text-lg text-gray-700 leading-relaxed">
+            MyBuggy is a leading ride-hailing platform that connects passengers with safe and reliable transportation services, making commuting a hassle-free experience. With its user-friendly mobile application and extensive network of trained drivers, MyBuggy provides seamless and affordable transportation solutions for customers in Allentown.
+          </p>
+        </div>
+      </div>
+
+      <div className="md:text-center mt-16 mb-12 px-4">
+        <h2 className="md:text-3xl text-lg font-bold">Here's A Summary (In Steps) Of How The App Operates</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 mt-8 lg:px-28">
+        {steps.map((step, index) => (
+          <div key={index} className="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105">
+            <h3 className="text-3xl font-extrabold text-black mb-3">Step {index + 1}</h3>
+            <h4 className="text-xl font-bold text-gray-500 mb-3">{step.title}</h4>
+            <p className="text-gray-600 leading-relaxed">{step.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

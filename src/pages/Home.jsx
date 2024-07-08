@@ -19,8 +19,8 @@ const Home = () => {
                         <div className=' text-center'>Mon - Sunday 9 AM to 11:30 PM</div>
                         <div className=' leading-relaxed lg:leading-loose'>New Mobile App, Registered, reliable & affordable Ride Hailing Ride Share transportation service, provides safe and efficient travel to Lehigh County Customers. Our goal is to provide a sustainable and convenient transportation option for everyone, with guaranteed savings from 1.50 $ compared to the market up to 20-30$ based on your ride</div>
                         <div className='flex '>
-                            <Link to="/"><img src={img2} alt="play-store" className="lg:w-9/12" /></Link>
-                            <Link to="/"><img src={img3} alt="apple-store" className="lg:w-9/12"/></Link>
+                            <Link to="https://apps.apple.com/us/app/my-buggy/id6505065765 "><img src={img2} alt="play-store" className="lg:w-9/12" /></Link>
+                            <Link to="https://play.google.com/store/apps/details?id=my.buggy.user&hl=en-US&ah=vm3fRyTPOq3Wt5CXekgTKRUrjF0"><img src={img3} alt="apple-store" className="lg:w-9/12"/></Link>
                             
                         </div>
                     </div>

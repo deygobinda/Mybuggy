@@ -3,7 +3,7 @@ import bl2 from '../assets/blog2.png';
 import bl3 from '../assets/blog3.png';
 function Recentblog() {
     return (
-        <div className="blogcard bg-white p-5 rounded-lg shadow-lg">
+        <div className="blogcard bg-white p-5 rounded-lg  hover:shadow-xl">
             <div className="imageofblog">
                 <img src={blog1img} className="w-full h-60 object-cover rounded-lg" alt="Recent Blog" />
             </div>
@@ -19,16 +19,16 @@ function Recentblog() {
 
 function Oldblog() {
     return (
-        <div className="oldblogcontainer grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-1 mt-5">
-            <div className="firstoldbox bg-white p-2 rounded-lg shadow-md">
+        <div className="oldblogcontainer grid grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-1 mt-5 ">
+            <div className="firstoldbox bg-white p-2 rounded-lg  hover:shadow-xl ">
                 <img src={bl2} className="w-full h-40 object-cover rounded-md" alt="Old Blog 1" />
                 <button type="button" className="border-4 py-1 px-5 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">Read</button>
             </div>
-            <div className="secondoldbox bg-white p-2 rounded-lg shadow-md">
+            <div className="secondoldbox bg-white p-2 rounded-lg  hover:shadow-xl ">
                 <img src={bl3} className="w-full h-40 object-cover rounded-md" alt="Old Blog 2" />
                 <button type="button" className="border-4 py-1 px-5 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">Read</button>
             </div>
-            <div className="thirdoldbox bg-white p-2 rounded-lg shadow-md">
+            <div className="thirdoldbox bg-white p-2 rounded-lg  hover:shadow-xl ">
                 <img src={blog1img} className="w-full h-40 object-cover rounded-md" alt="Old Blog 3" />
                 <button type="button" className="border-4 py-1 px-5 mt-4 rounded-md border-deepBlack text-customBlue hover:bg-blue-600 hover:text-white">Read</button>
             </div>
@@ -38,7 +38,7 @@ function Oldblog() {
 
 export default function Blog() {
     return (
-        <div id="blog" className="container-blog-main min-h-screen  text-gray-900 flex flex-col items-center py-10">
+        <div id="blog" className=" bg-gray-100 container-blog-main min-h-screen  text-gray-900 flex flex-col items-center py-10 ">
             <div className="heading flex items-start justify-center">
                 <h1 className="blog-title text-4xl md:text-6xl font-bold">THE BLOG</h1>
             </div>

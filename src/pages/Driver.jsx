@@ -1,5 +1,7 @@
 import img1 from "../assets/asset 19.jpg";
 import img2 from "../assets/asset 3.png";
+import img3 from "../assets/asset 2.png";
+import { Link } from "react-router-dom";
 
 export default function Driver() {
     return (
@@ -14,25 +16,19 @@ export default function Driver() {
                         />
                     </div>
                     <div className="w-full md:w-1/2 p-8">
-                        <h2 className="text-2xl font-bold mb-6">Earn every day in an easy way with Easy Taxi</h2>
+                        <h2 className="text-2xl font-bold mb-6">Earn every day in an easy way with Mybuggy</h2>
                         <form>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-600">Your name</label>
                                     <input type="text" className="block w-full p-3 border rounded-lg" />
                                 </div>
-                                <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-600">Your Driving License No</label>
-                                    <input type="text" className="block w-full p-3 border rounded-lg" />
-                                </div>
+
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-600">Your Registration No</label>
                                     <input type="text" className="block w-full p-3 border rounded-lg" />
                                 </div>
-                                <div>
-                                    <label className="block mb-2 text-sm font-medium text-gray-600">Your Social Security No</label>
-                                    <input type="text" className="block w-full p-3 border rounded-lg" />
-                                </div>
+
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-600">Your email</label>
                                     <input type="email" className="block w-full p-3 border rounded-lg" />
@@ -42,14 +38,21 @@ export default function Driver() {
                                     <input type="text" className="block w-full p-3 border rounded-lg" />
                                 </div>
                             </div>
-                            <div className="mt-4">
-                                <label className="block mb-2 text-sm font-medium text-gray-600">Your Profile Photo</label>
-                                <input type="file" className="block w-full text-sm text-gray-600" />
-                            </div>
+
                             <button type="submit" className="mt-6 w-full bg-gradient-to-r from-pink-500 to-red-500 text-white p-3 rounded-lg">Send</button>
                         </form>
-                        <div className="mt-6 text-center">
-                            <img src={img2} alt="Get it on Google Play" className="h-20 w-auto mx-auto" />
+                        <div className="flex justify-between">
+                            <Link to={"https://apps.apple.com/us/app/my-buggy-driver/id6505066806"}>
+                                <div className="mt-6 text-center">
+                                    <img src={img3} alt="Get it on Google Play" className="h-20 w-auto mx-auto" />
+                                </div>
+                            </Link>
+                            <Link to={"https://play.google.com/store/apps/details?id=my.buggy.driver"}>
+                                <div className="mt-6 text-center">
+                                    <img src={img2} alt="Get it on Google Play" className="h-20 w-auto mx-auto" />
+                                </div>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

@@ -5,8 +5,13 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div >
-              <h2 className="text-2xl font-bold text-black mb-4">MYBUGGY</h2>
-              <p className="text-gray-600 text-center">Allentown, Pennsylvania 18102, United States</p>
+              <h1 className="text-3xl font-bold text-black mb-1">MYBUGGY</h1>
+              <h2 className="text-sm mb-3">An American Rideshare Company</h2>
+              <div className="text-gray-600 text-center">
+                <p>Hamilton Business  Center(S-328)</p>
+                <p>1101 Hamilton St,</p>
+                <p>Allentown, PA 18101.</p>
+              </div>
             </div>
             <div className="">
               <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
@@ -23,10 +28,10 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Useful Links</h3>
               <ul className="space-y-2 text-gray-600">
-                <li><Link to="/" className="hover:text-primary">Career Opportunities</Link></li>
-                <li><Link to="/" className="hover:text-primary">Terms & Conditions For Driver</Link></li>
-                <li><Link to="/" className="hover:text-primary">Terms & Conditions For Rider</Link></li>
-                <li><Link to="/" className="hover:text-primary">Privacy Policy</Link></li>
+                <li><Link to="/career" className="hover:text-primary">Career Opportunities</Link></li>
+                <li><Link to="/terms-driver" className="hover:text-primary">Terms & Conditions For Driver</Link></li>
+                <li><Link to="/terms-rider" className="hover:text-primary">Terms & Conditions For Rider</Link></li>
+                <li><Link to="/privacy-policy" className="hover:text-primary">Privacy Policy</Link></li>
               </ul>
             </div>
             <div className="flex flex-col items-center">

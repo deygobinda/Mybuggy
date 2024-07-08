@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export default function ContactUs() {
     return (
@@ -28,12 +28,12 @@ export default function ContactUs() {
                             <i className="fas fa-envelope text-green-600 w-8 h-8"></i>
                             <div>
                                 <h3 className="font-medium text-green-600">Email</h3>
-                                <p className="text-gray-600">mybuggyusa@gmail.com</p>
+                                <p className="text-gray-600">contact@mybuggy.com</p>
                             </div>
                         </div>
                     </div>
                     <p className="mt-6 text-gray-500 text-sm">
-                        FOR ANY SUGGESTION PLEASE CONTACT US <a href="mailto:contact@easytaxiservices.com" className="text-blue-500">mybuggyusa@gmail.com</a> OR CALL 484.747.9294 
+                        FOR ANY SUGGESTION PLEASE CONTACT US <a href="mailto:contact@mybuggy.com" className="text-blue-500">contact@mybuggy.com</a> OR CALL 484.747.9294 
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 p-8 bg-gray-50">
