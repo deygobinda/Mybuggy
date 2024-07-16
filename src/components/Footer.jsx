@@ -37,10 +37,10 @@ const Footer = () => {
             <div className="flex flex-col items-center">
               <h3 className="text-xl font-semibold mb-4">Social Links</h3>
               <div className="flex space-x-4">
-                <Link to={"/"} className="text-gray-600 hover:text-primary"><i className="fab fa-facebook-f"></i></Link>
-                <Link to={"/"} className="text-gray-600 hover:text-primary"><i className="fab fa-twitter"></i></Link>
-                <Link to={"/"} className="text-gray-600 hover:text-primary"><i className="fab fa-linkedin-in"></i></Link>
-                <Link to={"/"} className="text-gray-600 hover:text-primary"><i className="fab fa-instagram"></i></Link>
+                <Link to={"/"} className="text-gray-600 hover:text-blue-600"><i className="fab fa-facebook-f"></i></Link>
+                <Link to={"/"} className="text-gray-600 hover:text-blue-400"><i className="fab fa-twitter"></i></Link>
+                <Link to={"/"} className="text-gray-600 hover:text-blue-700"><i className="fab fa-linkedin-in"></i></Link>
+                <Link to={"/"} className="text-gray-600 hover:text-pink-500"><i className="fab fa-instagram"></i></Link>
               </div>
             </div>
           </div>

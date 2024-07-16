@@ -16,8 +16,8 @@ export default function Driver() {
                         />
                     </div>
                     <div className="w-full md:w-1/2 p-8">
-                        <h2 className="text-2xl font-bold mb-6">Earn every day in an easy way with Mybuggy</h2>
-                        <form>
+                        <h2 className="text-3xl font-bold mb-6">Earn every day in an easy way with Mybuggy</h2>
+                        {/* <form>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-600">Your name</label>
@@ -40,7 +40,8 @@ export default function Driver() {
                             </div>
 
                             <button type="submit" className="mt-6 w-full bg-gradient-to-r from-pink-500 to-red-500 text-white p-3 rounded-lg">Send</button>
-                        </form>
+                        </form> */}
+                        <div className="font-sm text-xl">Ready to start driving? Download our app and join our team of dedicated drivers today!</div>
                         <div className="flex justify-between">
                             <Link to={"https://apps.apple.com/us/app/my-buggy-driver/id6505066806"}>
                                 <div className="mt-6 text-center">
